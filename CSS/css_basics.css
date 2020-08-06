@@ -1,0 +1,92 @@
+/* This is a comment */
+/*Can also comment out by hitting command and foward slash*/
+
+/*general form of css:
+selected tag{
+	property: value;
+}*/
+
+h1{
+	color: blue; /*can change color through keyword, rgb, rgba, or hexacode*/
+}
+
+li{
+	color: rgb(56,242,152);
+}
+
+p{
+	color: #42d1f5;
+}
+
+h4{
+	color: rgba(56,242,152,.5);
+}
+
+body{
+	/* This will affect everything inside the body
+	   some things you can chang here are: */
+
+	background-color: gray;
+	/* For background with images background: url(link to the image);*/
+}
+
+div{
+	/* Allows to make containers. Anything inside tge div in 
+		 the html code will be affected */
+
+	background:red;
+	border-width: thick; /* Can also select width with pixels: 'n px'*/
+	border-style: dotted;
+	border-color: blue;
+}
+
+p{
+/* Can also affect all paragraph in the body. However, this affects
+	   all text in all paragraphs, even outside of the div */
+}
+
+/* Selectors */
+
+
+/* This changes specific parts of codes that are inside the div with 
+   class name firstDiv and secondDiv.
+   For classes always start with a '.' */
+
+.firstDiv{
+	color: blue;
+}
+
+.secondDiv{
+	color: red;
+}
+
+/*  This is a selector for things labeled with and 'id'.
+ 	Ids are even more specific than classes. Classes can 
+ 	affect a block of code with many elements, but ids are 
+ 	for a single elements.*/
+
+#singledout{
+	color: green;
+	text-decoration: line-through;
+}
+
+/*  The '*' is a selector that selects every element on the page. 
+	It overrides classes but not ids. However using this selector
+	is not common. */
+
+*{
+	
+}
+
+/*  There are documentation online regarding more selectors. The aforementioned
+	selectors are the most common. Some other common ones are:
+
+	* adjacent siblings, use the '+' operator to select an element inside another 
+	element. Ex: h3+ul{  }
+
+	*descendants and attributes are also common selectors
+*/
+
+
+
+
