@@ -1,0 +1,59 @@
+/*	Font properties: size, weight, text alignment, ect
+	Exploring default fonts on different OS 
+*/
+
+/* 	em vs px, use em to resize text in relation to the browser default font size.
+	The default font is 16px or change the font size in body to npx and 
+	it'll be 1 em = npx
+
+	example below:
+*/
+
+body{
+	font-size: 20px;
+}
+
+#two{
+	font-size: 2em; /*2em=40px because body font size was changed to 20px*/
+
+}
+
+/* Downloading your own fonts from the internet
+	wwww.cssfontstack.com to check which fonts work best between mac/win os
+	www.fonts.google.com
+	www.fontslibrary.org 
+
+	After finding a desired font, we copy the link and embed the link provided
+	into the head of the html file. Then in css we can use the font style(some websites
+	provide a link for this part)
+
+	example: *notice in html file the header has links to said fonts
+*/
+
+#testone{
+   font-family: 'WaltographRegular';
+   font-weight: normal;
+   font-style: normal;
+}
+
+#testtwo{
+	font-family: 'Emilys Candy', cursive;
+}
+
+/*Box Model*/
+
+#top{	
+	border: 4px solid blue;
+	width: 25%;
+	text-align: center;
+	/*top,right,bottom,left*/
+	margin: auto;
+}
+
+#bottom{
+	border:	4px solid red;
+	width: 50%;
+	padding: 200px;
+	text-align: center;
+}
+
